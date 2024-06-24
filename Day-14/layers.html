@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Layers and Z-Index</title>
+		<style>
+			.a{
+				position: absolute;
+				top: 0px;
+				left: 50px;
+				height: 250px;
+				width: 250px;
+				background-color: lightblue;
+				align-content: center;
+				text-align: center;
+				z-index: 0;
+			}
+			.b{
+				position: absolute;
+				top: 0px;
+				left: 100px;
+				height: 250px;
+				width: 250px;
+				background-color: lightyellow;
+				align-content: center;
+				text-align: center;
+				z-index: 1;
+			}
+			.c{
+				position: absolute;
+				top: 0px;
+				left: 150px;
+				height: 250px;
+				width: 250px;
+				background-color: lightcoral;
+				align-content: center;
+				text-align: center;
+				z-index: 0;
+			}
+			.a:hover{
+				z-index: 1;
+				border: solid;
+				box-shadow: 0px 0px 10px black;
+			}
+			.b:hover{
+				z-index: 1;
+				border: solid;
+				box-shadow: 0px 0px 10px black;
+			}
+			.c:hover{
+				z-index: 1;
+				border: solid;
+				box-shadow: 0px 0px 10px black;
+			}
+
+		</style>
+</head>
+<body>
+		<div class="a">
+		Layer-1	
+		</div>
+		<div class="b">
+		Layer-2	
+		</div>
+		<div class="c">
+		Layer-3	
+		</div>
+</body>
+</html>
